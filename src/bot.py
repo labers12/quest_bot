@@ -4,10 +4,14 @@ from os import getenv
 from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher
 from src.handlers import router
+from src.database import init_db
 
 load_dotenv()
 
 async def main():
+    # Инициализируем базу данных
+    init_db()
+
     bot_token = getenv("TOKEN")
     logging.basicConfig(level=logging.INFO)
     bot = Bot(token=bot_token)

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd:*)",
+      "Bash(true:*)",
+      "Bash(cd c:\\\\Users\\\\леха\\\\Documents\\\\quest:*)"
+    ]
+  }
+}
